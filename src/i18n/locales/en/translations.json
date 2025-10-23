@@ -15,8 +15,12 @@
             "empty": "None found :("
         }
     },
-    "challenge": {
-
+    "pokemon": {
+        "deck": "My Deck",
+        "catalog": "The Pokemon Catalog",
+        "next": "Next",
+        "previous": "Previous",
+        "total": "{{count}} Pokemon in catalog"
     },
     "about": {
         "description": "A challenge project created for Nearform."

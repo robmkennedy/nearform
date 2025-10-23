@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
-import slice from '@state/slice';
+import { pokemonDeckSlice } from '@features/challenge/state/pokemonDeckSlice';
+import { pokemonApiSlice } from '@features/challenge/state/pokemonApiSlice';
 
 // The root reducer for the store.
 const rootReducer = {
-    [slice.reducerPath]: slice.reducer,
+    [pokemonDeckSlice.reducerPath]: pokemonDeckSlice.reducer,
+    [pokemonApiSlice.reducerPath]: pokemonApiSlice.reducer
 };
 
 /**
@@ -12,7 +14,7 @@ const rootReducer = {
  */
 export const store = configureStore({
     reducer: rootReducer,
-    // middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat([testApiSlice.middleware])
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat([pokemonApiSlice.middleware])
 });
 
 // Infer the `RootState` type from the store itself. The inferred RootState type is based on the root reducer.
