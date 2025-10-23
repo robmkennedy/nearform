@@ -1,0 +1,24 @@
+{
+    "app": {
+        "header": {
+            "title": "Rob Kennedy",
+            "nav": {
+                "challenge": "Challenge",
+                "search": "Search",
+                "about": "About"
+            }
+        },
+        "common": {
+            "error": "Error",
+            "loading": "Loading...",
+            "success": "Success!",
+            "empty": "None found :("
+        }
+    },
+    "challenge": {
+
+    },
+    "about": {
+        "description": "A challenge project created for Nearform."
+    }
+}
