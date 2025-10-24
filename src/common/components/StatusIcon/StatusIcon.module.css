@@ -1,0 +1,15 @@
+.statusIcon {
+
+    &:global(.success) {
+        color: var(--mantine-color-green-filled)
+    }
+
+    &:global(.error) {
+        color: var(--mantine-color-red-filled)
+    }
+
+    svg {
+        display: block;
+    }
+
+}

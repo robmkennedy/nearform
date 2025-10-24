@@ -1,8 +1,15 @@
-.root {
+.pokemonCard {
+    position: relative;
     cursor: pointer;
     flex-shrink: 0;
-}
 
-.name {
-    text-transform: capitalize;
+    .name {
+        text-transform: capitalize;
+    }
+
+    .status {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 }

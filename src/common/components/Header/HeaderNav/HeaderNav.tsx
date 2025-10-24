@@ -7,7 +7,7 @@ export function HeaderNav() {
     const { t } = useTranslation();
 
     return (
-        <Group gap='md' visibleFrom='sm'>
+        <Group gap='md'>
             <HeaderLink to={'pokemon'} icon={pokemonIcon} label={t('app.header.nav.pokemon')} />
             <HeaderLink to={'about'} icon={aboutIcon} label={t('app.header.nav.about')} />
         </Group>

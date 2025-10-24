@@ -1,17 +1,21 @@
-import type { PropsWithChildren } from 'react';
-import { Stack } from '@mantine/core';
+import type { PropsWithChildren, ReactNode } from 'react';
+import { Flex, Stack } from '@mantine/core';
 import { SectionTitle } from '@common/components/SectionTitle/SectionTitle';
 
 type SectionProps = PropsWithChildren & {
     title: string;
+    controls: ReactNode;
 };
 
 /**
  */
-export function Section({ children, title }: SectionProps) {
+export function Section({ children, title, controls }: SectionProps) {
     return (
         <Stack>
-            <SectionTitle text={title} />
+            <Flex align='center' justify='space-between'>
+                <SectionTitle text={title} />
+                {controls}
+            </Flex>
             {children}
         </Stack>
     );

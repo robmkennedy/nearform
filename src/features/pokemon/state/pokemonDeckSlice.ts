@@ -1,13 +1,9 @@
 import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
 import type { Pokemon } from '@features/pokemon/types/pokemonTypes';
 
-type DeckState = {
-    pokemonDeckList: Pokemon[];
-};
+type DeckState = Record<string, Pokemon>;
 
-const initialDeckState: DeckState = {
-    pokemonDeckList: []
-};
+export const initialDeckState: DeckState = {};
 
 /**
  */
@@ -16,13 +12,14 @@ export const pokemonDeckSlice = createSlice({
     initialState: initialDeckState,
     reducers: {
         pokemonSelected: (state, { payload }: PayloadAction<Pokemon>) => {
-            const exists = state.pokemonDeckList.find((pokemon) => pokemon.name === payload.name);
-            if (!exists) {
-                state.pokemonDeckList.push(payload);
+            if (!state[payload.name]) {
+                state[payload.name] = payload;
             }
         },
         pokemonDeselected: (state, { payload }: PayloadAction<Pokemon>) => {
-            state.pokemonDeckList = state.pokemonDeckList.filter((pokemon) => pokemon.name !== payload.name);
+            if (state[payload.name]) {
+                delete state[payload.name];
+            }
         }
     }
 });

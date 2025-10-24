@@ -9,11 +9,9 @@ export function PokemonPage() {
     return (
         <Page>
             <Stack>
-                    <PokemonDeck />
-
+                <PokemonDeck />
                 <Divider />
-                    <PokemonCatalog />
-
+                <PokemonCatalog />
             </Stack>
         </Page>
     );

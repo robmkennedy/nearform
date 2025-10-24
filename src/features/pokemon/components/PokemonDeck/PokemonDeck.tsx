@@ -13,13 +13,13 @@ export function PokemonDeck() {
     const dispatch = useAppDispatch();
     const { t } = useTranslation();
 
-    const pokemonDeckList = useAppSelector((state) => state.pokemonDeck.pokemonDeckList);
+    const pokemonDeckList = useAppSelector((state) => state.pokemonDeck);
 
     const handlePokemonSelected = (pokemon: Pokemon) => {
         dispatch(pokemonDeselected(pokemon));
     };
 
-    const pokemonCards = pokemonDeckList.map((pokemon) => {
+    const pokemonCards = Object.values(pokemonDeckList).map((pokemon) => {
         return <PokemonCard onClick={handlePokemonSelected} key={pokemon.name} pokemon={pokemon} />;
     });
 

@@ -6,7 +6,7 @@ import { MantineProvider } from '@mantine/core';
 
 import { store } from '@state/store';
 import { theme } from '@styles/theme';
-import { router } from '@utils/routing/routes';
+import { router } from '@utils/routes';
 import '@styles/main.css';
 import '@i18n/i18n';
 

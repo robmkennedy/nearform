@@ -35,12 +35,13 @@ export function PokemonCatalog() {
     };
 
     const pokemonDeckCards = pokemonList.map((pokemon) => {
-        return <PokemonCard onClick={handlePokemonSelected} key={pokemon.name} pokemon={pokemon} />;
+        return <PokemonCard onClick={handlePokemonSelected} key={pokemon.name} pokemon={pokemon} showStatus={true} />;
     });
 
+    const controls = <PokemonCatalogControl data={data} onPrev={handlePrev} onNext={handleNext} />;
+
     return (
-        <Section title={t('pokemon.catalog')}>
-            <PokemonCatalogControl data={data} onPrev={handlePrev} onNext={handleNext} />
+        <Section title={t('pokemon.catalog')} controls={controls}>
             <Flex wrap='wrap' gap='sm'>
                 {pokemonDeckCards}
             </Flex>

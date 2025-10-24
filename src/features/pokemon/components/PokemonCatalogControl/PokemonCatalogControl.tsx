@@ -1,6 +1,6 @@
-import { Button, Group, Text } from '@mantine/core';
+import { Button } from '@mantine/core';
 import type { PokemonResult } from '@features/pokemon/types/pokemonTypes';
-import { useTranslation } from 'react-i18next';
+import { nextIcon, prevIcon } from '@assets/images/icons';
 
 type PokemonCatalogControlProps = {
     data: PokemonResult | undefined;
@@ -11,17 +11,14 @@ type PokemonCatalogControlProps = {
 /**
  */
 export function PokemonCatalogControl({ data, onPrev, onNext }: PokemonCatalogControlProps) {
-    const { t } = useTranslation();
-
     return (
-        <Group>
-            <Button onClick={onPrev} disabled={!data?.previous}>
-                {t('pokemon.previous')}
+        <Button.Group>
+            <Button variant='outline' size='compact-md' onClick={onPrev} disabled={!data?.previous}>
+                {prevIcon}
             </Button>
-            <Button onClick={onNext} disabled={!data?.next}>
-                {t('pokemon.next')}
+            <Button variant='outline' size='compact-md' onClick={onNext} disabled={!data?.next}>
+                {nextIcon}
             </Button>
-            {data && <Text>{t('pokemon.total', { count: data.count })}</Text>}
-        </Group>
+        </Button.Group>
     );
 }
