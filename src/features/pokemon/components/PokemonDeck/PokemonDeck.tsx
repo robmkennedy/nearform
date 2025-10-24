@@ -20,7 +20,7 @@ export function PokemonDeck() {
     };
 
     const pokemonCards = pokemonDeckList.map((pokemon) => {
-        return <PokemonCard onClick={handlePokemonSelected} key={pokemon.name} pokemon={pokemon} direction='row' />;
+        return <PokemonCard onClick={handlePokemonSelected} key={pokemon.name} pokemon={pokemon} />;
     });
 
     return (

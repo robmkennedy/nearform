@@ -13,7 +13,7 @@ import type { Pokemon } from '@features/pokemon/types/pokemonTypes';
  */
 export function PokemonCatalog() {
     const [pokemonUrl, setPokemonUrl] = useState<string>('https://pokeapi.co/api/v2/pokemon');
-    const { data, isLoading, isSuccess, isError } = useGetPokemonQuery(pokemonUrl);
+    const { data } = useGetPokemonQuery(pokemonUrl);
     const dispatch = useAppDispatch();
     const { t } = useTranslation();
 
