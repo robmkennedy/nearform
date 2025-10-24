@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Card, Flex, Image, Text } from '@mantine/core';
-import type { Pokemon } from '@features/challenge/types/pokemonTypes';
+import type { Pokemon } from '@features/pokemon/types/pokemonTypes';
 import styles from './PokemonCard.module.css';
 
 type PokemonCardProps = {

@@ -1,10 +1,10 @@
 import { describe, expect, it } from 'vitest';
 import { render, screen } from '@test/testUtils';
-import { ChallengePage } from '@features/challenge/components/ChallengePage/ChallengePage';
+import { PokemonPage } from '@features/pokemon/components/PokemonPage/PokemonPage';
 
-describe('ChallengePage', () => {
-    it('renders challenge page', () => {
-        render(<ChallengePage />);
+describe('PokemonPage', () => {
+    it('renders pokemon page', () => {
+        render(<PokemonPage />);
         const label = screen.getByText('Challenge Start Here');
         expect(label).toBeInTheDocument();
 

@@ -1,5 +1,5 @@
 import { Button, Group, Text } from '@mantine/core';
-import type { PokemonResult } from '@features/challenge/types/pokemonTypes';
+import type { PokemonResult } from '@features/pokemon/types/pokemonTypes';
 import { useTranslation } from 'react-i18next';
 
 type PokemonCatalogControlProps = {

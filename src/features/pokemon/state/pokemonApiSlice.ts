@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import type { PokemonResult } from '@features/challenge/types/pokemonTypes';
+import type { PokemonResult } from '@features/pokemon/types/pokemonTypes';
 
 /**
  */

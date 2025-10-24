@@ -1,6 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
-import { pokemonDeckSlice } from '@features/challenge/state/pokemonDeckSlice';
-import { pokemonApiSlice } from '@features/challenge/state/pokemonApiSlice';
+import { pokemonDeckSlice } from '@features/pokemon/state/pokemonDeckSlice';
+import { pokemonApiSlice } from '@features/pokemon/state/pokemonApiSlice';
 
 // The root reducer for the store.
 const rootReducer = {

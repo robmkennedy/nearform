@@ -1,5 +1,5 @@
 import { createSlice, type PayloadAction } from '@reduxjs/toolkit';
-import type { Pokemon } from '@features/challenge/types/pokemonTypes';
+import type { Pokemon } from '@features/pokemon/types/pokemonTypes';
 
 type DeckState = {
     pokemonDeckList: Pokemon[];

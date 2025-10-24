@@ -3,8 +3,7 @@
         "header": {
             "title": "Rob Kennedy",
             "nav": {
-                "challenge": "Challenge",
-                "search": "Search",
+                "pokemon": "Pokemon",
                 "about": "About"
             }
         },
@@ -20,7 +19,7 @@
         "catalog": "The Pokemon Catalog",
         "next": "Next",
         "previous": "Previous",
-        "total": "{{count}} Pokemon in catalog"
+        "total": "{{count}} Total Pokemon"
     },
     "about": {
         "description": "A challenge project created for Nearform."

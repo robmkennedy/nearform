@@ -1,8 +1,8 @@
 import { Stack } from '@mantine/core';
 import { Section } from '@common/components/Section/Section';
-import type { Pokemon } from '@features/challenge/types/pokemonTypes';
-import { pokemonDeselected } from '@features/challenge/state/pokemonDeckSlice';
-import { PokemonCard } from '@features/challenge/components/PokemonCard/PokemonCard';
+import type { Pokemon } from '@features/pokemon/types/pokemonTypes';
+import { pokemonDeselected } from '@features/pokemon/state/pokemonDeckSlice';
+import { PokemonCard } from '@features/pokemon/components/PokemonCard/PokemonCard';
 import { useAppDispatch } from '@common/hooks/useAppDispatch';
 import { useAppSelector } from '@common/hooks/useAppSelector';
 import { useTranslation } from 'react-i18next';
