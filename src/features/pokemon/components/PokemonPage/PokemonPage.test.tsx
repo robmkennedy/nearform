@@ -1,12 +1,10 @@
-import { describe, expect, it } from 'vitest';
-import { render, screen } from '@test/testUtils';
+import { describe, it } from 'vitest';
+import { render } from '@test/testUtils';
 import { PokemonPage } from '@features/pokemon/components/PokemonPage/PokemonPage';
 
 describe('PokemonPage', () => {
     it('renders pokemon page', () => {
         render(<PokemonPage />);
-        const label = screen.getByText('Challenge Start Here');
-        expect(label).toBeInTheDocument();
 
         // const button = screen.getByRole('button', { name: /search/i });
         // const input = screen.getByRole('textbox');

@@ -4,11 +4,9 @@ import { SectionTitle } from '@common/components/SectionTitle/SectionTitle';
 
 type SectionProps = PropsWithChildren & {
     title: string;
-    controls: ReactNode;
+    controls?: ReactNode;
 };
 
-/**
- */
 export function Section({ children, title, controls }: SectionProps) {
     return (
         <Stack>

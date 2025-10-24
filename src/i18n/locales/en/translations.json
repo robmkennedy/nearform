@@ -16,10 +16,7 @@
     },
     "pokemon": {
         "deck": "My Deck",
-        "catalog": "The Pokemon Catalog",
-        "next": "Next",
-        "previous": "Previous",
-        "total": "{{count}} Total Pokemon"
+        "catalog": "The Pokemon Catalog"
     },
     "about": {
         "description": "A challenge project created for Nearform."

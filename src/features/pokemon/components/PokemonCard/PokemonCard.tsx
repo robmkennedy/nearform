@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { Card, Flex, Image, Text } from '@mantine/core';
 import type { Pokemon } from '@features/pokemon/types/pokemonTypes';
-import styles from './PokemonCard.module.css';
-import { useAppSelector } from '@common/hooks/useAppSelector';
 import { StatusIcon } from '@common/components/StatusIcon/StatusIcon';
+import { useAppSelector } from '@common/hooks/useAppSelector';
+import styles from './PokemonCard.module.css';
 
 type PokemonCardProps = {
     pokemon: Pokemon;

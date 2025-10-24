@@ -1,13 +1,13 @@
-import { PokemonCard } from '@features/pokemon/components/PokemonCard/PokemonCard';
-import { Section } from '@common/components/Section/Section';
-import { Flex } from '@mantine/core';
-import { useGetPokemonQuery } from '@features/pokemon/state/pokemonApiSlice';
 import { useState } from 'react';
-import { useTranslation } from 'react-i18next';
-import { pokemonSelected } from '@features/pokemon/state/pokemonDeckSlice';
-import { useAppDispatch } from '@common/hooks/useAppDispatch';
-import { PokemonCatalogControl } from '@features/pokemon/components/PokemonCatalogControl/PokemonCatalogControl';
+import { Flex } from '@mantine/core';
+import { Section } from '@common/components/Section/Section';
 import type { Pokemon } from '@features/pokemon/types/pokemonTypes';
+import { PokemonCard } from '@features/pokemon/components/PokemonCard/PokemonCard';
+import { PokemonCatalogControl } from '@features/pokemon/components/PokemonCatalogControl/PokemonCatalogControl';
+import { pokemonSelected } from '@features/pokemon/state/pokemonDeckSlice';
+import { useGetPokemonQuery } from '@features/pokemon/state/pokemonApiSlice';
+import { useAppDispatch } from '@common/hooks/useAppDispatch';
+import { useTranslation } from 'react-i18next';
 
 /**
  */
