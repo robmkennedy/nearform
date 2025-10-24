@@ -1,4 +1,4 @@
-import { Stack } from '@mantine/core';
+import { Group, ScrollArea } from '@mantine/core';
 import { Section } from '@common/components/Section/Section';
 import type { Pokemon } from '@features/pokemon/types/pokemonTypes';
 import { pokemonDeselected } from '@features/pokemon/state/pokemonDeckSlice';
@@ -25,7 +25,11 @@ export function PokemonDeck() {
 
     return (
         <Section title={t('pokemon.deck')}>
-            <Stack gap='sm'>{pokemonCards}</Stack>
+            <ScrollArea scrollHideDelay={0} offsetScrollbars style={{ width: '100%' }}>
+                <Group gap='sm' wrap='nowrap'>
+                    {pokemonCards}
+                </Group>
+            </ScrollArea>
         </Section>
     );
 }

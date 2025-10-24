@@ -1,4 +1,4 @@
-import { Divider, Grid } from '@mantine/core';
+import { Divider, Stack } from '@mantine/core';
 import { Page } from '@/common/components/Page/Page';
 import { PokemonCatalog } from '@features/pokemon/components/PokemonCatalog/PokemonCatalog';
 import { PokemonDeck } from '@features/pokemon/components/PokemonDeck/PokemonDeck';
@@ -8,15 +8,13 @@ import { PokemonDeck } from '@features/pokemon/components/PokemonDeck/PokemonDec
 export function PokemonPage() {
     return (
         <Page>
-            <Grid h='100%' gutter={70}>
-                <Grid.Col span='content'>
+            <Stack>
                     <PokemonDeck />
-                </Grid.Col>
-                <Divider orientation='vertical' />
-                <Grid.Col span='auto'>
+
+                <Divider />
                     <PokemonCatalog />
-                </Grid.Col>
-            </Grid>
+
+            </Stack>
         </Page>
     );
 }
