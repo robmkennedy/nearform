@@ -9,10 +9,10 @@ export const router = createBrowserRouter(
             path: '/',
             Component: App,
             children: [
-                { index: true, element: <Navigate to='/challenge' /> },
+                { index: true, element: <Navigate to='/pokemon' /> },
                 { path: '/about', Component: AboutPage },
                 { path: '/pokemon', Component: PokemonPage },
-                { path: '/*', element: <Navigate to='/challenge' /> }
+                { path: '/*', element: <Navigate to='/pokemon' /> }
             ]
         }
     ],
